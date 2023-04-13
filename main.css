@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(201, 201, 201);
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item-a {
+    grid-area: header;
+  }
+  .item-b {
+    grid-area: main;
+  }
+  .item-c {
+    grid-area: aside;
+  }
+  .item-d {
+    grid-area: footer;
+  }
+.div {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header"
+      "main aside"
+      "footer footer";
+    gap: 7px 7px;
+  }
+header{
+    text-align: center;
+    background-color: rgb(255, 74, 216);
+    color: rgb(247, 247, 247);
+}
+main{
+    background-color: rgb(155, 223, 255);
+}
+aside{
+    background-color: rgb(246, 255, 125);
+}
+footer{
+    text-align: center;
+    background-color: rgb(255, 74, 216);
+    color: rgb(247, 247, 247);
+}
+article{
+    margin: auto;
+    padding: 1em;
+}
+form{
+    margin: auto;
+    padding: 1em;
+}
+label{
+    padding: 5px;
+}
+input{
+    margin-left: 1em;
+    margin-bottom: 7px;
+}
+select{
+    margin-left: 1em;
+    margin-bottom: 7px;
+}
+.submit{
+    margin-top: 1em;
+}
+.checkbox{
+    transform: scale(1.5);
+}
+table{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+html{
+    scroll-behavior: smooth;
+}
+input,li,table,label,p{
+    font-size: 18px;
+}
